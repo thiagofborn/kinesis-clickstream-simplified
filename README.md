@@ -20,14 +20,14 @@ It was enough to demonstrate the concepts.
 - Launch a lambda on your AWS account to check what is happening
 
 ### Installing nodejs
-Macs check the reference: 
+To install quicly on OSX check the reference as follows: 
 ```
 https://www.dyclassroom.com/howto-mac/how-to-install-nodejs-and-npm-on-mac-using-homebrew
 ```
 
 ### Clone the repository
 ```shell
-git clone 
+git clone https://github.com/thiagofborn/kinesis-clickstream-simplified.git 
 ```
 
 ### Installing AWS nodejs SDK
@@ -36,6 +36,8 @@ npm i aws-sdk
 ```
 
 ### Launch the Application
+Run the app you will have everything that is happening on the ouput. 
+This is nice to explain what is happening to your audience. 
 ```shell
 node app.js
 ```
