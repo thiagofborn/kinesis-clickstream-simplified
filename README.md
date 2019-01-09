@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 ## Simplified sample of Kinesis Click Stream
-=======
-## simplified sample of Kinesis Click Stream
->>>>>>> 4a490defda661dc411b48b1554418f81f39629a6
+
 I have wrote this sample for a presentation training, so don't expect much about it. 
 Basically, it is a nodejs application that launches a http server with a hosts a web page that has two links.
 The links triggers an API call to Kinesis Data Stream (putRecord request), and used as data blob the raw HTTP requested parsed into a JSON file as the blob data.
