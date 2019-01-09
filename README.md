@@ -9,7 +9,7 @@ One AWS lambda function can be create to be the consumer. The AWS Lambda Bluepri
 It was enough to demonstrate the concepts.
 
 ### The web page
-![Sample Web Page](https://github.com/thiagofborn/kinesis-clickstream-simplified/images/samplepage.png "Sample Web Page")
+![Sample Web Page](https://github.com/thiagofborn/kinesis-clickstream-simplified/blob/master/images/samplepage.png "Sample Web Page")
 
 ### Prerequisites
 - Create a Kinesis Data Stream
