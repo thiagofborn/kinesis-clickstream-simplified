@@ -1,4 +1,4 @@
-### simplified sample of Kinesis Click Stream
+## Simplified sample of Kinesis Click Stream
 I have wrote this sample for a presentation training, so don't expect much about it. 
 Basically, it is a nodejs application that launches a http server with a hosts a web page that has two links.
 The links triggers an API call to Kinesis Data Stream (putRecord request), and used as data blob the raw HTTP requested parsed into a JSON file as the blob data.
@@ -42,3 +42,25 @@ This is nice to explain what is happening to your audience.
 node app.js
 ```
 ### AWS Lambda as a consumer
+```python
+"""
+You can find this source on the AWS Lambda blueprint
+I have added some extra but I commented. 
+"""
+from __future__ import print_function
+
+import base64
+import json
+
+print('Loading function')
+
+
+def lambda_handler(event, context):
+    #print("Received event: " + json.dumps(event, indent=2))
+    for record in event['Records']:
+        # Kinesis data is base64 encoded so decode here
+        payload = base64.b64decode(record['kinesis']['data'])
+        print("Decoded payload: " + payload)
+    return 'Successfully processed {} records.'.format(len(event['Records']))
+
+```
