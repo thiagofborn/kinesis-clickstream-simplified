@@ -46,7 +46,7 @@ node app.js
 ```python
 """
 You can find this source on the AWS Lambda blueprint
-I have added some extra but I commented. 
+I have added some extra but it is commented here. 
 """
 from __future__ import print_function
 
