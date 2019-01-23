@@ -37,11 +37,10 @@ npm i aws-sdk
 ```
 
 ### Update your /etc/hosts with local IP entry
-On my local environment I have the entry matching the string "myip". So, I wrote a shell to query my local IP address and update the entry on my /etc/hosts. 
+On my local environment I have the entry matching the string "**myip**". So, I wrote a shell to query my local IP address and update the entry on my /etc/hosts. Please note the script was written based on Mac OSX Sierra - 10.12.6. 
 ```
 10.222.108.64 myip 784f435de58f.ant.com
 ```
-
 
 ### Launch the Application
 Run the app you will have everything that is happening on the ouput. 
@@ -49,7 +48,10 @@ This is nice to explain what is happening to your audience.
 ```shell
 node app.js
 ```
+
 ### AWS Lambda as a consumer
+The lambda consumer will be triggered by the *Lambda Poller*. In short, the *Lambda Poller*, passed the object directly to your lambnda function. 
+In this case it is simplified. 
 ```python
 """
 You can find this source on the AWS Lambda blueprint
