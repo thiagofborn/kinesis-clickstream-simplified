@@ -39,7 +39,7 @@ npm i aws-sdk
 ### Update your /etc/hosts with local IP entry
 On my local environment I have the entry matching the string "myip". So, I wrote a shell to query my local IP address and update the entry on my /etc/hosts. 
 ```
-10.222.108.64 myip 784f435de58f.ant.
+10.222.108.64 myip 784f435de58f.ant.com
 ```
 
 
