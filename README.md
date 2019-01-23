@@ -36,6 +36,13 @@ git clone https://github.com/thiagofborn/kinesis-clickstream-simplified.git
 npm i aws-sdk
 ```
 
+### Update your /etc/hosts with local IP entry
+On my local environment I have the entry matching the string "myip". So, I wrote a shell to query my local IP address and update the entry on my /etc/hosts. 
+```
+10.222.108.64 myip 784f435de58f.ant.
+```
+
+
 ### Launch the Application
 Run the app you will have everything that is happening on the ouput. 
 This is nice to explain what is happening to your audience. 
