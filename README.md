@@ -42,9 +42,9 @@ On my local environment I have the entry matching the string "**myip**". So, I w
 10.222.108.64 myip 784f435de58f.ant.com
 ```
 
-### Launch the Application
-Run the app you will have everything that is happening on the ouput. 
-This is nice to explain what is happening to your audience. 
+### Launching the Application
+Run the app using the command bellow. You will be able to see all the ouput on your screen. 
+This can be used to explain the whole process to your audience. RestFull APIs, the interaction between your app and AWS etc.
 ```shell
 node app.js
 ```
