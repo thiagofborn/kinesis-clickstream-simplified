@@ -1,10 +1,10 @@
 ## Simplified sample of Kinesis Click Stream
 
-I have wrote this sample for a presentation training, so don't expect much about it. 
-Basically, it is a nodejs application that launches a http server with a hosts a web page that has two links.
-The links triggers an API call to Kinesis Data Stream (putRecord request), and used as data blob the raw HTTP requested parsed into a JSON file as the blob data.
-So, case you click the link "Click Streaming to Kinesis Data Stream" it will tag the request as "Kinesis" parse the raw http request and ship it to a Kinesis Data stream.
-Same concept to "Click Kafka Data Stream", but instead of Kinesis it will tag as Kafka.
+I have written this sample for presentation training, so don't expect much about it. 
+It is a nodejs application that launches an HTTP server with a host a web page that has two links.
+The links trigger an API call to Kinesis Data Stream (putRecord request), and used as data blob the raw HTTP requested parsed into a JSON file as the blob data.
+So, case you click the link "Click Streaming to Kinesis Data Stream," it will tag the request as "Kinesis" parse the raw HTTP request and ship it to a Kinesis Datastream.
+The same concept to "Click Kafka Data Stream," but instead of Kinesis, it will tag as Kafka.
 
 One AWS lambda function can be create to be the consumer. The AWS Lambda Blueprints has one easy blueprint to follow.
 It was enough to demonstrate the concepts.
