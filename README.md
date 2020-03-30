@@ -37,21 +37,21 @@ npm i aws-sdk
 ```
 
 ### Update your /etc/hosts with local IP entry
-On my local environment I have the entry matching the string "**myip**". So, I wrote a shell to query my local IP address and update the entry on my /etc/hosts. Please note the script was written based on Mac OSX Sierra - 10.12.6. 
+At my local environment, I have the entry matching the string "**myip**." So, I wrote a shell to query my local IP address and update the listing on my /etc/hosts. Please note the script was written based on Mac OSX Sierra - 10.12.6. 
 ```
 10.222.108.64 myip 784f435de58f.ant.com
 ```
 
 ### Launching the Application
-Run the app using the command bellow. You will be able to see all the ouput on your screen. 
-This can be used to explain the whole process to your audience. RestFull APIs, the interaction between your app and AWS etc.
+Run the app using the command below. You will be able to see all the output on your screen. 
+We can use this to explain the whole process to your audience: restful APIs, the interaction between your app and AWS, etc.
 ```shell
 node app.js
 ```
 
 ### AWS Lambda as a consumer
-The lambda consumer will be triggered by the *Lambda Poller*. In short, the *Lambda Poller*, passed the object directly to your lambnda function. 
-In this case it is simplified. 
+The lambda consumer will be triggered by the *Lambda Poller*. In short, the *Lambda Poller* passed the object directly to your lambda function. 
+In this case, it is simplified.
 ```python
 """
 You can find this source on the AWS Lambda blueprint
